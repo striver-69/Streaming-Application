@@ -67,7 +67,7 @@ const mapStateToProps=(state)=>{
   return {
     streams:Object.values(state.streams),
     currentUserId: state.auth.userId,
-    isSignedIn:state.auth.isSignedIn
+    isSignedIn:state.props.isSignedIn
   }
 }
 
