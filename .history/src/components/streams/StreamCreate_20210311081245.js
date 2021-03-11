@@ -11,10 +11,6 @@ export class StreamCreate extends Component {
     )
   }
 
-  onSubmit(formValues){
-    console.log(formValues)
-  }
-
   render() {
     return (
       <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form">
