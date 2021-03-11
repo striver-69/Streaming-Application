@@ -22,12 +22,7 @@ class StreamList extends React.Component{
   }
   render(){
     return(
-      <div> 
-        <h2>Streaming</h2>
-        <div className="ui celled list">
-          {this.renderList()}
-        </div>  
-      </div>
+      <div>{this.renderList()}</div>
     )
   }
 }

@@ -27,8 +27,8 @@ export class StreamCreate extends Component {
     )
   }
 
-  onSubmit=(formValues)=>{
-    this.props.createStream(formValues)
+  onSubmit(formValues){
+    console.log(formValues)
   }
 
   render() {
@@ -59,4 +59,4 @@ const formWrapped= reduxForm({
   validate:validate
 })(StreamCreate)
 
-export default connect(null,{createStream})(formWrapped)
+export default connect()(formWrapped)
