@@ -13,8 +13,7 @@ class StreamShow extends React.Component{
     }
     return(
       <div>
-        <h1>{this.props.stream.title}</h1>
-        <h3>{this.props.stream.description}</h3>
+        {this.props.stream.title}
       </div>
     )
   }
